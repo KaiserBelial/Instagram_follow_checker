@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Instagram Follower Checker",
+    "version": "1.0.0",
+    "description": "See who isn't following you back on Instagram",
+    "permisions": ["activeTab", "scripting"],
+    "content_scripts": [{
+        "matches": ["https://www.instagram.com/*"],
+        "js": ["content.js"]
+    }],
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Instagram Follow Checker"
+    }
+}
